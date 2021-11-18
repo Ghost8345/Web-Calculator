@@ -1,0 +1,40 @@
+<div class = calculator>
+
+  <div class = screen> 
+
+    <p class = expression id = exp> {{expression}} </p>
+
+    <p class = result id = res> {{result}} </p>
+
+  </div>
+  
+  <div class = calc-body> 
+
+      <button class = calc-button id = mod-btn (click) = "twoOperand('mod')"> % </button>
+      <button class = calc-button id = ce-btn (click) = "clear()"> CE </button>
+      <button class = calc-button id = c-btn (click) = "clear()"> C </button>
+      <button class = calc-button id = del-btn (click) = "delete()"> DEL </button>
+      <button class = calc-button id = inv-btn (click) = "oneOperand('i')"> <sup>1</sup>/<sub>X</sub> </button>
+      <button class = calc-button id = sqr-btn (click) = "oneOperand('sq')"> X<sup>2</sup> </button>
+      <button class = calc-button id = sqr-root-btn (click) = "oneOperand('sqr')"> <sup>2</sup>√x </button>
+      <button class = calc-button id = div-btn (click) = "twoOperand('div')"> ÷ </button>
+      <button class = calc-button id = 7-btn (click) = "display('7')"> 7 </button>
+      <button class = calc-button id = 8-btn (click) = "display('8')"> 8 </button>
+      <button class = calc-button id = 9-btn (click) = "display('9')"> 9 </button>
+      <button class = calc-button id = mult-btn (click) = "twoOperand('mult')"> × </button>
+      <button class = calc-button id = 4-btn (click) = "display('4')"> 4 </button>
+      <button class = calc-button id = 5-btn (click) = "display('5')"> 5 </button>
+      <button class = calc-button id = 6-btn (click) = "display('6')"> 6 </button>
+      <button class = calc-button id = sub-btn (click) = "twoOperand('sub')"> - </button>
+      <button class = calc-button id = 1-btn (click) = "display('1')"> 1 </button>
+      <button class = calc-button id = 2-btn (click) = "display('2')"> 2 </button>
+      <button class = calc-button id = 3-btn (click) = "display('3')"> 3 </button>
+      <button class = calc-button id = add-btn (click) = "twoOperand('add')"> + </button>
+      <button class = calc-button id = neg-btn (click) = "negate()"> &#177; </button>
+      <button class = calc-button id = 0-btn (click) = "display('0')"> 0 </button>
+      <button class = calc-button id = dot-btn (click) = "display('.')"> . </button>
+      <button class = calc-button id = eq-btn (click) = "eval()"> = </button>
+
+  </div>
+
+</div>
